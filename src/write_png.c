@@ -33,7 +33,7 @@
 #define png_voidp voidp
 #endif
 
-int Pygame_SDL2_SavePNG(const char *file, SDL_Surface *surf,int compression){
+int Pygame-Sdl2_SavePNG(const char *file, SDL_Surface *surf,int compression){
 	SDL_RWops *fp;
 	int ret;
 
@@ -43,7 +43,7 @@ int Pygame_SDL2_SavePNG(const char *file, SDL_Surface *surf,int compression){
 		return (-1);
 	}
 
-	ret=Pygame_SDL2_SavePNG_RW(fp,surf,compression);
+	ret=Pygame-Sdl2_SavePNG_RW(fp,surf,compression);
 	SDL_RWclose(fp);
 	return ret;
 }
@@ -53,7 +53,7 @@ static void png_write_data(png_structp png_ptr,png_bytep data, png_size_t length
 	SDL_RWwrite(rp,data,1,length);
 }
 
-int Pygame_SDL2_SavePNG_RW(SDL_RWops *src, SDL_Surface *surf,int compression){
+int Pygame-Sdl2_SavePNG_RW(SDL_RWops *src, SDL_Surface *surf,int compression){
 	png_structp png_ptr;
 	png_infop info_ptr;
 	SDL_PixelFormat *fmt=NULL;

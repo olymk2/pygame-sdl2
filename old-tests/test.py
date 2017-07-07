@@ -1,7 +1,7 @@
 from __future__ import division, print_function, absolute_import
 
-import pygame_sdl2 as pygame
-from pygame_sdl2.locals import *
+import pygame-sdl2 as pygame
+from pygame-sdl2.locals import *
 
 pygame.init()
 surf = pygame.display.set_mode((400, 400))

@@ -62,7 +62,7 @@ static int write_jpeg (
     return 0;
 }
 
-int Pygame_SDL2_SaveJPEG(SDL_Surface *surface, const char *file, int quality) {
+int Pygame-Sdl2_SaveJPEG(SDL_Surface *surface, const char *file, int quality) {
 
 	SDL_Surface *rgb_surf;
 	JSAMPROW *samples;

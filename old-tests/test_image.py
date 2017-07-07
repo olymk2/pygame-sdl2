@@ -2,7 +2,7 @@
 
 from __future__ import unicode_literals, print_function
 
-import pygame_sdl2; pygame_sdl2.import_as_pygame()
+import pygame-sdl2; pygame-sdl2.import_as_pygame()
 import sys, os
 import pygame
 

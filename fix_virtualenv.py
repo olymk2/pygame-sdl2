@@ -23,7 +23,7 @@ def main():
     os.mkdir(tmp)
 
     for i in os.listdir(source):
-        if i == "pygame_sdl2":
+        if i == "pygame-sdl2":
             continue
 
         os.symlink(os.path.join(source, i), os.path.join(tmp, i))
